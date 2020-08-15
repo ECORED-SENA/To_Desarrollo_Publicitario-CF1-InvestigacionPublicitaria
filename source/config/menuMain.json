@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },  
+  {
+    "icon": "fa fa-file-text-o",
+    "slug": "tema-1",
+    "title": "1. Antecedentes de investigación de mercados",
+    "path": "pages/tema-1.html"
+  },
+  {
+    "icon": "fa fa-file-text-o",
+    "slug": "tema-2",
+    "title": "2. Variables del mercado",
+    "path": "pages/tema-2.html" 
+  },
+  {
+    "icon": "fa fa-file-text-o",
+    "slug": "tema-3",
+    "title": "3. Recolección de información",
+    "path": "pages/tema-3.html"
+  },
+  {
+    "icon": "fa fa-file-text-o",
+    "slug": "tema-4",
+    "title": "4. Matrices de diagnóstico",
+    "path": "pages/tema-4.html"
+  },
+  {
+    "icon": "fa fa-question-circle",
+    "slug": "tema-5",
+    "title": "5. Proceso de investigación",
+    "path": "pages/tema-5.html"
+  }
+]

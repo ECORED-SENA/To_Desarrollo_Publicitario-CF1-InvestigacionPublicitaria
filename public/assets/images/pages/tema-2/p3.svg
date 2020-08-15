@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="121" height="121" viewBox="0 0 121 121">
+  <g id="Grupo_10004" data-name="Grupo 10004" transform="translate(-145 -3978)">
+    <g id="Grupo_9934" data-name="Grupo 9934" transform="translate(2406 7885)">
+      <circle id="Elipse_497" data-name="Elipse 497" cx="60.5" cy="60.5" r="60.5" transform="translate(-2261 -3907)" fill="#7cb342"/>
+      <path id="Trazado_1178" data-name="Trazado 1178" d="M53.993,0A53.993,53.993,0,1,1,0,53.993,53.993,53.993,0,0,1,53.993,0Z" transform="translate(-2254 -3900)" fill="#fff"/>
+    </g>
+    <g id="Grupo_9947" data-name="Grupo 9947" transform="translate(-92.3 3549.249)">
+      <path id="Trazado_1371" data-name="Trazado 1371" d="M298.578,482.729H284.417a2.054,2.054,0,0,0-1.932,1.93,2.938,2.938,0,0,0,1.932,1.879h14.161a2.051,2.051,0,0,0,1.932-1.879A1.706,1.706,0,0,0,298.578,482.729Z" transform="translate(5.404 23.221)" fill="#002b45" fill-rule="evenodd"/>
+      <path id="Trazado_1372" data-name="Trazado 1372" d="M298.278,485.775H284.76a2.033,2.033,0,0,0-1.932,1.894,1.692,1.692,0,0,0,1.932,1.9h13.519c.645,0,1.289-.631,1.289-1.9C299.567,487.036,298.923,485.775,298.278,485.775Z" transform="translate(5.703 25.882)" fill="#002b45" fill-rule="evenodd"/>
+      <path id="Trazado_1373" data-name="Trazado 1373" d="M283.859,489.151c3.219,3.159,3.863,3.792,5.151,3.792h2.574c1.287,0,1.932-.633,5.151-3.792Z" transform="translate(6.604 28.831)" fill="#002b45" fill-rule="evenodd"/>
+      <path id="Trazado_1374" data-name="Trazado 1374" d="M317.5,475.585c0,12.018-10.3,18.347-10.3,27.843h-5.149c0-11.373,10.3-17.7,10.3-27.843,0-19.582-30.9-19.582-30.9,0,0,10.138,10.3,15.825,10.3,27.843h-4.506c0-9.5-10.944-15.825-10.944-27.843C276.3,449.673,317.5,449.673,317.5,475.585Z" transform="translate(0)" fill="#002b45" fill-rule="evenodd"/>
+      <path id="Trazado_1375" data-name="Trazado 1375" d="M300.05,463.832c-1.932.643-2.576,1.877-3.219,3.809-1.287,4.4,1.287,7.564-.645,12.016-1.287,2.522-3.219,3.809-5.149,3.809a29.217,29.217,0,0,0,1.287,13.251h-3.219c-1.287-6.331-.645-17.7,3.219-23.389-2.576,1.233-4.506,5.685-5.151,9.494C279.449,478.37,285.242,463.832,300.05,463.832Z" transform="translate(6.508 6.711)" fill="#7cb342" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

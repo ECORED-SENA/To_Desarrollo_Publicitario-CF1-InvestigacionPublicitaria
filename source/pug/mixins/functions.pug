@@ -1,0 +1,217 @@
+mixin pageHeader(tituloTema, srcImagen, pagina)
+    .curso-portada
+
+        .row.align-items-center
+
+            .col-12.col-lg-6
+
+                h3#curso-titulo-componente.curso-subtitulo Tecnología en Desarrollo Publicitario
+                h1#curso-titulo-tema.curso-titulo Investigación Publicitaria
+
+                .brand-line-primary
+
+                if pagina == 'main'
+
+                    .keywords
+                        span.badge.badge-pill.badge-brand-light.mr-2 #DiagnósticoEmpresarial
+                        span.badge.badge-pill.badge-brand-light.mr-2 #Briefing
+                        span.badge.badge-pill.badge-brand-light.mr-2 #InvestigaciónMercados
+
+                    .barra-dots.mt-5
+                        img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
+
+                else 
+                    p.curso-descripcion.text-white La investigación publicitaria, es un brazo de la investigación de mercados; si bien, esta tiene todos los componentes para el desarrollo de un completo diagnóstico de una empresa a nivel publicitario, se hace indispensable referir los datos e información que a nivel de comunicación y promoción requiere una empresa para el desarrollo de las estrategias que atañen esta materia.
+        
+                if pagina == 'home'
+                    a.curso-btn-iniciar.btn.btn-light(href="main.html")
+                        span Iniciar Curso
+
+
+            .col-12.col-lg-6.text-center
+                .d-none.d-lg-block
+                    img(src= srcImagen).curso-imagen
+
+
+mixin referenciaItem(referencia, enlace, tituloenlace="")
+    p= referencia
+        if tituloenlace != ""
+            a(href= enlace, target="_blank").ml-2= tituloenlace
+        else if enlace != ""
+            a(href= enlace, target="_blank").ml-2= enlace
+    hr
+
+
+
+mixin navTemaItem(numero, titulo, ruta)
+    li.list-group-item.nav-tema-item
+        .row.align-items-center
+            if numero == 'play'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-play
+            else if numero == 'question'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-question
+            else if numero == 'text'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-file-text-o
+            else if numero == 'glosario'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-sort-alpha-asc
+            else if numero == 'complementario'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-folder-open
+            else if numero == 'referencias'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-book
+            else
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold= numero
+
+            .col.ml-n2
+                span.nav-tema-item__titulo 
+                    a(href= ruta)= titulo
+            .col-auto                                            
+                a(href= ruta).btn.btn-light.nav-tema-item__btn
+                    | Ver más
+    
+    
+mixin creditosFooter(ruta)
+    footer#Creditos.footer
+        .container
+
+            h1 Créditos               
+            .brand-line-primary
+
+            .row
+                .col-12.col-md-5
+                    h3.footer-subtitulo.mb-4 ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES 
+
+                    p.footer-texto.mb-2
+                        | #[strong Ingry Dayanna Bonilla Monzon	 ]<br/>   
+                        span.text-small Líder del equipo
+
+            .row.mt-5
+                .col-12.col-md-5
+                    h4.footer-subtitulo-2.mt-0 
+                        .fa.fa-caret-right.mr-2
+                        | Contenido Instruccional
+
+                    p.footer-texto.mb-2
+                        | #[strong Gloria Matilde Lee Mejía	 ]<br/>   
+                        span.text-small Responsable del equipo
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Comercio y Servicios
+                        br
+                        span.text-small Regional Tolima
+
+
+                    p.footer-texto.mb-2
+                        | #[strong Rafael Nelftalí Lizcano Reyes]<br/>               
+                        span.text-small Asesor pedagógico<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA   
+                        br
+                        span.text-small Regional Santander    
+
+                    p.footer-texto.mb-2
+                        | #[strong Ricardo Andrés Castro Ortega]<br/> 
+                        span.text-small Experto temático<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Biotecnología Industrial
+
+                    p.footer-texto.mb-2
+                        | #[strong Julio Alexander Rodríguez del Castillo.]<br/>   
+                        span.text-small E-pedagogo instruccional<br/>
+
+                    p.footer-texto.mb-2
+                        | #[strong Sandra Milena Henao Melchor]<br/>   
+                        span.text-small Evaluadora de contenidos<br/>
+
+                    p.footer-texto.mb-2
+                        | #[strong Érika Alejandra Beltrán Cuesta]<br/>   
+                        span.text-small Evaluadora de calidad instruccional<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Atención Sector Agropecuario
+
+                    p.footer-texto.mb-2
+                        | #[strong Lily Johana Tibavija Rodríguez]<br/>   
+                        span.text-small Diseñadora Instruccional<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro para la industria y la comunicación gráfica.
+
+                    p.footer-texto.mb-2
+                        | #[strong Julieth Paola Vital López]<br/>   
+                        span.text-small Evaluadora instruccional<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro para la Industria de la Comunicación Gráfica
+                       
+                .col-12.col-md-5
+                    h4.footer-subtitulo-2.mt-0 
+                        .fa.fa-caret-right.mr-2
+                        | Diseño y desarrollo de recursos educativos digitales
+                    
+                    p.footer-texto
+                        | #[strong Francisco José Lizcano Reyes ]<br/>   
+                        span.text-small Responsable del equipo<br/>
+
+                    p.footer-texto                           
+                        | #[strong Yazmin Rocio Figueroa Pacheco]<br/>
+                        | #[strong Eulises Orduz Amezquita]<br/>
+                        span.text-small Diseño Web & Producción Audiovisual<br/>
+
+                    p.footer-texto
+                        | #[strong Edgar Mauricio Cortes García]<br/>                          
+                        | #[strong Leyson Fabian Castaño Perez]<br/>                                    
+                        span.text-small Desarrollo Front-End<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA   
+                        br
+                        span.text-small Regional Santander                   
+
+                    h4.footer-subtitulo-2.mt-5
+                        .fa.fa-caret-right.mr-2
+                        | Gestores de repositorio
+                    
+                    p.footer-texto
+                        | #[strong Kely Alejandra Quiros Duarte ]<br/>   
+                        span.text-small Administrador repositorio de contenidos y gestores de repositorio.<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de comercio y servicios  
+                        br
+                        span.text-small Regional Tolima
+
+                .col-12.col-md-2  
+                    .d-flex.flex-column.justify-content-center
+                        img(src= ruta, style="max-width:100px")
+
+    section#cc
+        .container
+            .d-flex.flex-column.flex-sm-row
+                span.pr-3
+                    i.icon.cc
+            
+                span
+                    | Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que
+                    | el trabajo original.
